@@ -169,3 +169,6 @@ runs:
         rm .lfs-assets-id-unsorted
         rm .lfs-assets-id
       shell: bash
+branding:
+  icon: 'archive'
+  color: 'gray-dark'
