@@ -149,7 +149,7 @@ runs:
       shell: bash
 
     - name: Restore LFS Cache
-      uses: ambi-robotics/cache@v1
+      uses: ambi-robotics/cache@v4
       id: lfs-cache
       with:
         path: |
