@@ -53,11 +53,6 @@ inputs:
   clean:
     description: 'Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching'
     default: true
-  filter:
-    description: >
-      Partially clone against a given filter.
-      Overrides sparse-checkout if set.
-    default: null
   sparse-checkout:
     description: >
       Do a sparse checkout on given patterns.
@@ -104,7 +99,7 @@ runs:
   using: "composite"
   steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.ref }}
